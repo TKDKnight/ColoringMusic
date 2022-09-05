@@ -168,8 +168,8 @@ class MidiFile(mido.MidiFile):
             plt.xticks([int(x * x_label_interval) for x in range(20)],
                        [round(x * x_label_period_sec, 2) for x in range(20)])
 
-            # modify label and scale of y axis
-            plt.yticks([y*16 for y in range(8)], [y*16 for y in range(8)])
+        # modify label and scale of y axis
+        plt.yticks([y*16 for y in range(8)], [y*16 for y in range(8)])
 
         channel_nb = 16
         transparent = colorConverter.to_rgba('black')
